@@ -2,7 +2,7 @@
 
 ## Code organization
 
-Vizzard is a [Flask](http://flask.pocoo.org/) app hosted on [heroku](https://www.heroku.com/) with a python backend dependent on [matplotlib](https://matplotlib.org/), [pandas](https://pandas.pydata.org/) and [scipy](https://www.scipy.org/).
+Vizzard is a [Flask](http://flask.pocoo.org/) app hosted on [heroku](https://www.heroku.com/) with a python backend dependent on [matplotlib](https://matplotlib.org/), [pandas](https://pandas.pydata.org/) and [scipy](https://www.scipy.org/). Any changes to the master branch on the Github repository will automatically trigger a build on heroku.
 
 ## Best practice
 
