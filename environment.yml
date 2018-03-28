@@ -8,3 +8,4 @@ dependencies:
   - pip:
     - flask
     - jinja2
+    - mpld3
