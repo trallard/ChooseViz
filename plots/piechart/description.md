@@ -1,0 +1,1 @@
+A pie chart is a visual representation of proportions of the whole. Frequencies of categorical variables are converted to proportions, which are converted to angles. Although visually appealing, pie charts are notorious for being misleading, as small changes in angles are much more difficult to distinguish than small changes in height.
