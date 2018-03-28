@@ -1,3 +1,6 @@
 flask
 requests
 numpy
+scipy
+matplotlib
+pandas
