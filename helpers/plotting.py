@@ -14,13 +14,19 @@ def find_plots(plottype):
     return plot_list
 
 def build_dict(plot_list):
-    plot_dict = dict()
+    plot_dict = {}
     for plot_ in plot_list:
         container = os.path.split(plot_)[0]
+        name = container.split('/')[-1]
         print(container)
         plot_img = os.path.join(container, 'py/plot.png')
         plot_code = os.path.join(container, 'py/plot.py')
-        plot_dict.update(dict(path=plot_img))
+        plot_description = os.path.join(container, 'description.md')
+        plot_dict[name] = {
+            'dir': container,
+            'img': plot_img,
+            'code': plot_code,
+            'description': plot_description
+        }
 
     print(plot_dict)
-
