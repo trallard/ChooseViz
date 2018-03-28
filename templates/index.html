@@ -6,14 +6,67 @@
 					<div class="row">
 							<div class="col-md-8 ml-auto mr-auto text-center">
 									<h1 class="title"> Vizzard </h1>
-									<h4>
+									<h3>
 										Data-centered visualization resources.
 										Visualize your data in an appropriate and reproducible way.
-									</h4>
+									</h3>
 							</div>
 					</div>
 			</div>
-	</div>
+</div>
+
+<div class="container" id='about'>
+<!--     *********     FEATURES 1      *********      -->
+<div class="features-1">
+		<div class="row">
+				<div class="col-md-8 ml-auto mr-auto">
+						<h2 class="title">
+							Using Vizzard</h2>
+						<h5 class="description">
+							Ever wonder which graph type is the best for your data?
+							We can help you to <strong> understand </strong>
+							how to better visualize your data and get you
+							started with reproducible data scripts.
+						</h5>
+				</div>
+		</div>
+		<div class="row">
+				<div class="col-md-4">
+						<div class="info">
+								<div class="icon icon-info">
+										<i class="material-icons">list</i>
+								</div>
+								<h4 class="info-title">Choose your data types</h4>
+								<p>Select the kind of data you are working from using the dropdown
+									menu.</p>
+						</div>
+				</div>
+				<div class="col-md-4">
+						<div class="info">
+								<div class="icon icon-primary">
+										<i class="material-icons">open_in_browser</i>
+								</div>
+								<h4 class="info-title">See suggested plots</h4>
+								<p>Find out which are the most suitable plots for these data types.
+								</p>
+						</div>
+				</div>
+				<div class="col-md-4">
+						<div class="info">
+								<div class="icon icon-info">
+										<i class="material-icons">save</i>
+								</div>
+								<h4 class="info-title">Get a template script</h4>
+								<p>Copy the basic template script provided and get started in your data viz journey!
+								</p>
+						</div>
+				</div>
+		</div>
+		<a href="{{ url_for('picker') }}">
+		<button type="submit" class="btn btn-primary btn-round bt-large">
+			Get started</button> </a>
+
+</div>
 
 
 	{% include "footer.html" %}
