@@ -89,9 +89,7 @@ Vizzard's source code can be found [on Github](https://github.com/trallard/Choos
 * `categorical`
 * `continuous`
 
-
 # Future potential
 
 Add-ons to Vizzard may include the possibility to upload your own data (currently an example data set is used) or expand the number of scripting languages available (currently just matplotlib). More details can be found in this repository's issues
-
 
