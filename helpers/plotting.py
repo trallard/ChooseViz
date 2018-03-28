@@ -24,10 +24,12 @@ def build_dict(plot_list):
         plot_description = os.path.join(container, 'description.md')
         with open(plot_description, 'r') as des:
             description = des.read()
+        with open(plot_code, 'r') as code:
+            code_full = code.read()
         plot_dict.append({
             'dir': container,
             'img': plot_img,
-            'code': plot_code,
+            'code': code_full,
             'description': description
         })
 
