@@ -1,5 +1,6 @@
 import os
 from flask import Flask, render_template, request, redirect, session, url_for
+from helpers.plotting import find_plots
 
 # Create the app object and the session
 app = Flask("Vizzard")
@@ -17,8 +18,10 @@ def picker():
 @app.route("/picker_search", methods=['POST'])
 def data_pick():
     data1 = request.values['data1']
+    print(data1)
     data2 = request.values['data2']
-    return render_template('plot-show.html', data1=data1)
+    paths = find_plots(data1)
+    return render_template('plot-show.html', paths=paths)
 
 if 'PORT' in os.environ:
      app.run(host='0.0.0.0', port=int(os.environ['PORT']))
