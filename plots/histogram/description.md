@@ -1,0 +1,1 @@
+A histogram is a kind of bar chart, where the categories are arbitrary intervals of a continuous data range. In order to differentiate a histogram from a bar chart there should be no gaps between the bars. It is useful in providing an estimate for the distribution and shape of quantitative data.

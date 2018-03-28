@@ -1,0 +1,1 @@
+A violin plot is similar to a boxplot, used to visualise the distribution and spread of quantitative data. However specific summary statistics such as the quartiles are not represented. Instead, a continuous estimation of the distribution is given. Note that the distibution of a violinplot is mirrored, which may be misleading in some cases.
