@@ -13,14 +13,11 @@ Visualization is a key part of science communication, and needs to be done in an
 
 The [Python Graph Gallery](https://python-graph-gallery.com/) and the [R Graph Gallery](https://www.r-graph-gallery.com/) exemplify possible ways of visualizing data using a scripting language, but do not relate to the user's data.
 
-##Carta
+## D3.js
+[D3.js](https://d3js.org/) is a Javascript library to visualize data, but does not offer the possibility to narrow down the choice of plot to suit the data at hand.
 
-## 
-[D3.js](https://d3js.org/)
-
-## others
-
-https://oxshef.github.io/oxshef/training-resources.html
+## General advice
+[OxShef:dataviz](https://oxshef.github.io/oxshef/training-resources.html) (and presumably others) provides general advice on how to visualize data, but is not interactive.
 
 ### References
 
