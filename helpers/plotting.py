@@ -10,11 +10,11 @@ def find_plots(plottype):
             datatype = f.read()
             if datatype == plottype.lower():
                 plot_list.append(os.path.relpath(meta))
-    build_dict(plot_list)
-    return plot_list
+    plot_dic = build_dict(plot_list)
+    return plot_dic
 
 def build_dict(plot_list):
-    plot_dict = {}
+    plot_dict = []
     for plot_ in plot_list:
         container = os.path.split(plot_)[0]
         name = container.split('/')[-1]
@@ -22,11 +22,13 @@ def build_dict(plot_list):
         plot_img = os.path.join(container, 'py/plot.png')
         plot_code = os.path.join(container, 'py/plot.py')
         plot_description = os.path.join(container, 'description.md')
-        plot_dict[name] = {
+        with open(plot_description, 'r') as des:
+            description = des.read()
+        plot_dict.append({
             'dir': container,
             'img': plot_img,
             'code': plot_code,
-            'description': plot_description
-        }
+            'description': description
+        })
 
-    print(plot_dict)
+    return (plot_dict)

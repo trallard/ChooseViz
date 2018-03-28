@@ -20,8 +20,9 @@ def data_pick():
     data1 = request.values['data1']
     print(data1)
     data2 = request.values['data2']
-    paths = find_plots(data1)
-    return render_template('plot-show.html', paths=paths)
+    plot_dic = find_plots(data1)
+    print(plot_dic)
+    return render_template('plot-show.html', plot_dict=plot_dic)
 
 if 'PORT' in os.environ:
      app.run(host='0.0.0.0', port=int(os.environ['PORT']))

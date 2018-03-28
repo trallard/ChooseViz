@@ -12,20 +12,16 @@
           </div>
 
           {% for plot in plot_dict %}
-          <div class="col-md-4 col-sm-4">
+          <div class="col-md-8 col-sm-8">
             <div class="card card-profile">
               <div class="card-image">
-                  <img class="img" src="{{plot.dir}}" alt="{{plot.name}}" />
+                  <img class="img" src="{{plot.img}}" alt="{{plot.name}}" />
               </div>
               <div class="card-title text-center text-primary">
-                {{plot.name}}
+                {{plot.description}}
               </div>
 
-              <!-- <div class="card-content text-center">
-                  <p class="'card-category"> {{album.artists[0].name}} </p>
-                  <p class="card-description">
-                  Type: {{album.album_type}}</p>
-              </div> -->
+
             </div>
           </div>
           {% endfor %}
