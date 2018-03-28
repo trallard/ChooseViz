@@ -1,0 +1,1 @@
+Horizontal bar charts are suited for plots that aim to compare magnitudes of categorical data. If the labels of the categorical data are particularly long, horizontal bar charts may be easier to read than vertical ones.
