@@ -1,0 +1,1 @@
+A KDE plot, or Kernal Density Estimation plot is a method of estimating a continuous probability density function from empirical data. It is useful when visualising the spread and distribution shape of continuous quantitative data. KDE plots may offer advantages over histograms when the latter is very sensitive to bin sizes.
