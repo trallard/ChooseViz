@@ -6,10 +6,29 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="title">
-                  {{paths}}
+                  Recommended plots
                 </h2>
             </div>
           </div>
+
+          {% for plot in plot_dict %}
+          <div class="col-md-4 col-sm-4">
+            <div class="card card-profile">
+              <div class="card-image">
+                  <img class="img" src="{{plot.dir}}" alt="{{plot.name}}" />
+              </div>
+              <div class="card-title text-center text-primary">
+                {{plot.name}}
+              </div>
+
+              <!-- <div class="card-content text-center">
+                  <p class="'card-category"> {{album.artists[0].name}} </p>
+                  <p class="card-description">
+                  Type: {{album.album_type}}</p>
+              </div> -->
+            </div>
+          </div>
+          {% endfor %}
     </div>
 </div>
 
