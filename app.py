@@ -1,10 +1,15 @@
 import os
-from flask import Flask, render_template, request, redirect, session, url_for
+from flask import Flask, render_template, request, url_for
+from flask import Blueprint
 from helpers.plotting import find_plots
 
 # Create the app object and the session
 app = Flask("Vizzard")
 session = {}
+
+blueprint = Blueprint('site', __name__, static_folder='plots')
+app.register_blueprint(blueprint)
+
 
 @app.route('/')
 def index():
