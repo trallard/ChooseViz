@@ -1,31 +1,65 @@
 {% include "header.html" %}
 
 <div class='container' style="height:70px;"> </div>
-<div class="section-gray" >
-    <div class="container" >
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="title">
-                  Recommended plots
-                </h2>
-            </div>
-          </div>
 
-          {% for plot in plot_dict %}
-          <div class="col-md-8 col-sm-8">
-            <div class="card card-profile">
-              <div class="card-image">
-                  <img class="img" src="./{{plot.img}}" alt="{{plot.name}}" />
-              </div>
-              <div class="card-title text-center text-primary">
-                {{plot.description}}
-              </div>
-              <hr>
-              <code><pre> {{plot.code}} </code></pre>
-            </div>
+
+<div class="section-gray" >
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="title">
+          Recommended plots
+        </h2>
+      </div>
+      
+      <div class="alert alert-warning">
+        <div class="container-fluid">
+          <div class="alert-icon">
+            <i class="material-icons">warning</i>
           </div>
-          {% endfor %}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true"><i class="material-icons">clear</i></span>
+          </button>
+          <b>Warning Alert:</b>
+          These are only suggestions on the plots that will best help you visualize your
+          data but by no means replace a good statistical analysis.
+        </div>
+      </div>
+
+      {% for plot in plot_dict %}
+      <div class="col-md-6 col-sm-6">
+        <div class="card card-profile">
+          <!-- <div class="card-image">
+          <img class="img" src="./{{plot.img}}" alt="{{plot.name}}" />
+        </div> -->
+        <div class='card-body'>
+          <div class="card-title text-center">
+            {{plot.description}}
+          </div>
+          <hr>
+          <div class='text-left'>
+            <code><pre class="prettyprint">
+              {{plot.code}}
+            </code></pre>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="col-md-6 col-sm-6">
+      <div class="card card-blog card-plain">
+        <div class="card-header card-header-image">
+          <!-- <a href="#pablo"> -->
+          <img src="{{plot.img}}" alt="{{plot.name}}">
+          <!-- </a> -->
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</div>
+</div>
 </div>
 
 
